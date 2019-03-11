@@ -1,200 +1,668 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  
-  <title>Dageer</title>
-  <meta name="author" content="Dageer">
-  
-  <meta name="description" content="Dageer 的个人博客">
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
-  <meta property="og:site_name" content="Dageer">
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
 
-  
-    <meta property="og:image" content>
-  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="Dageer">
 
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Dageer" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="http://oindk07nf.qnssl.com/atom-one-dark.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
 
-</head>
-</html>
+    
+    
 
+
+<meta name="description" content="Dageer 的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dageer">
+<meta property="og:url" content="http://dageer7.github.io/index.html">
+<meta property="og:site_name" content="Dageer">
+<meta property="og:description" content="Dageer 的个人博客">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dageer">
+<meta name="twitter:description" content="Dageer 的个人博客">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="Dageer" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Dageer</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: false
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Dageer</a></h1>
-  <h2><a href="/">Dageer的个人文章与资料记载</a></h2>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Dageer</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">Dageer的个人文章与资料记载</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="/382996571@qq.com" title="Email"></a>
+                            
+                                <a class="fa 微信" href="/13840170430" title="微信"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo1/">hexo1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/保险/">保险</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/格式/">格式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/正则表达式/">正则表达式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程/">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自学内容/">自学内容</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">一会儿再写</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
 </div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">主页</a></li>
-    
-      <li><a href="/archives">归档</a></li>
-    
-      <li><a href="/about">关于</a></li>
-    
-    <li><a target="_blank" href="https://www.baidu.com">百度搜索</a></li>
-  </ul>
-  <div class="clearfix"></div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Dageer</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Dageer</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">Dageer的个人文章与资料记载</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="/382996571@qq.com" title="Email"></a>
+                            
+                                <a class="fa 微信" target="_blank" href="/13840170430" title="微信"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-<div class="clearfix"></div>
-</header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
+      <div class="body-wrap">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2019-03-09T13:30:33.817Z"><a href="/2019/03/09/hexo的格式笔记/">2019-03-09</a></time>
-      
-      
+    <article id="post-少儿平安福" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <h1 class="title"><a href="/2019/03/09/hexo的格式笔记/">记录hexo写文的一般格式</a></h1>
+    <div class="article-meta">
+      <a href="/2019/03/11/少儿平安福/" class="article-date">
+      <time datetime="2019-03-11T06:43:10.127Z" itemprop="datePublished">2019-03-11</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/11/少儿平安福/">少儿平安福</a>
+    </h1>
   
 
-    </header>
-    <div class="entry">
+      </header>
       
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+         <a id="more"></a>
+<h4 id="0岁男性，交20年，年交保费11000-元"><a href="#0岁男性，交20年，年交保费11000-元" class="headerlink" title="0岁男性，交20年，年交保费11000    元"></a>0岁男性，交20年，年交保费11000    元</h4><h4 id="1-意外医疗：20000-100-20000-100-报销-门诊、住院都算"><a href="#1-意外医疗：20000-100-20000-100-报销-门诊、住院都算" class="headerlink" title="1. 意外医疗：20000    100~20000    100%报销  门诊、住院都算"></a>1. 意外医疗：20000    100~20000    100%报销  门诊、住院都算</h4><h4 id="2-住院医疗：29000-次-不限次数"><a href="#2-住院医疗：29000-次-不限次数" class="headerlink" title="2. 住院医疗：29000/次  不限次数"></a>2. 住院医疗：29000/次  不限次数</h4><ul>
+<li>住院费 6000</li>
+<li>器官移植手术 20000</li>
+<li>小手术 3000</li>
+</ul>
+<p><strong>等待期30天</strong>  社保合理范围，80%报销</p>
+<h4 id="3-住院日额：-200元-天-全年180天"><a href="#3-住院日额：-200元-天-全年180天" class="headerlink" title="3. 住院日额： 200元/天  全年180天"></a>3. 住院日额： 200元/天  全年180天</h4><blockquote>
+<ul>
+<li>疾病第四天</li>
+<li>意外第一天 </li>
+</ul>
+</blockquote>
+<p>重大疾病400元/天，全年90天。</p>
+<h4 id="4-意外伤害：200000-nbsp-至70岁"><a href="#4-意外伤害：200000-nbsp-至70岁" class="headerlink" title="4. 意外伤害：200000 &nbsp;  至70岁"></a>4. 意外伤害：200000 &nbsp;  至70岁</h4><blockquote>
+<ul>
+<li>身故（直接赔付）（公共交通、自乘自驾双倍赔付）</li>
+<li>身残（1~10级按比例赔付）</li>
+</ul>
+</blockquote>
+<h4 id="5-重大疾病：400000-nbsp-终身"><a href="#5-重大疾病：400000-nbsp-终身" class="headerlink" title="5. 重大疾病：400000 &nbsp; 终身"></a>5. 重大疾病：400000 &nbsp; 终身</h4><blockquote>
+<ul>
+<li>100种重疾，一次性赔付</li>
+<li>30种轻度重疾，不同轻度重疾最多累计赔付三次 </li>
+<li>15种少儿特定重疾 </li>
+</ul>
+</blockquote>
+<p><strong>等待期90天</strong> 白血病双倍赔付 </p>
+<h4 id="6-附加恶性肿瘤：-400000-nbsp-终身-赔付三次-nbsp-相隔五年，包括：新生、转移、复发"><a href="#6-附加恶性肿瘤：-400000-nbsp-终身-赔付三次-nbsp-相隔五年，包括：新生、转移、复发" class="headerlink" title="6. 附加恶性肿瘤：  400000&nbsp;  终身 赔付三次&nbsp;  相隔五年，包括：新生、转移、复发"></a>6. 附加恶性肿瘤：  400000&nbsp;  终身 赔付三次&nbsp;  相隔五年，包括：新生、转移、复发</h4><h4 id="7-定期寿险-200000-至25岁"><a href="#7-定期寿险-200000-至25岁" class="headerlink" title="7.定期寿险 200000    至25岁"></a>7.定期寿险 200000    至25岁</h4><h4 id="8-少儿陪护金-20000-月-至25岁"><a href="#8-少儿陪护金-20000-月-至25岁" class="headerlink" title="8.少儿陪护金  20000/月  至25岁"></a>8.少儿陪护金  20000/月  至25岁</h4><blockquote>
+<ul>
+<li>轻疾3个月</li>
+<li>重疾6个月</li>
+<li>特定重疾6个月</li>
+</ul>
+</blockquote>
+<h4 id="9-身价：-410000-nbsp-终身"><a href="#9-身价：-410000-nbsp-终身" class="headerlink" title="9. 身价： 410000 &nbsp;  终身"></a>9. 身价： 410000 &nbsp;  终身</h4><h4 id="10-豁免：-nbsp-轻症或者重症之后免交剩余各期保费，可选择投保人豁免或者被保险人豁免"><a href="#10-豁免：-nbsp-轻症或者重症之后免交剩余各期保费，可选择投保人豁免或者被保险人豁免" class="headerlink" title="10. 豁免：&nbsp; 轻症或者重症之后免交剩余各期保费，可选择投保人豁免或者被保险人豁免"></a>10. 豁免：&nbsp; 轻症或者重症之后免交剩余各期保费，可选择投保人豁免或者被保险人豁免</h4><h4 id="11-搭配E生保：百万医疗，一万免赔，包括自费药。"><a href="#11-搭配E生保：百万医疗，一万免赔，包括自费药。" class="headerlink" title="11. 搭配E生保：百万医疗，一万免赔，包括自费药。"></a>11. 搭配E生保：百万医疗，一万免赔，包括自费药。</h4>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/保险资料/">保险资料</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/保险/">保险</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-平安福" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/03/11/平安福/" class="article-date">
+      <time datetime="2019-03-11T04:34:28.926Z" itemprop="datePublished">2019-03-11</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/11/平安福/">平安福</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h4 id="25岁男性，交20年，年交保费-元"><a href="#25岁男性，交20年，年交保费-元" class="headerlink" title="25岁男性，交20年，年交保费    元"></a>25岁男性，交20年，年交保费    元</h4>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/保险资料/">保险资料</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/保险/">保险</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2019/03/11/平安福/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-正则表达式" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/03/10/正则表达式/" class="article-date">
+      <time datetime="2019-03-10T11:20:24.912Z" itemprop="datePublished">2019-03-10</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/10/正则表达式/">正则表达式</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>先从莫烦python网站来学习针对于python所用的正则表达式<br>详细教程：<a href="https://morvanzhou.github.io/tutorials/python-basic/basic/13-10-regular-expression/" target="_blank" rel="noopener">https://morvanzhou.github.io/tutorials/python-basic/basic/13-10-regular-expression/</a><br>首先  import re 是必要的，引入正则表达式模块<br>re.search(ptn,”dog runs to cat”) 匹配是否含有<br>ptn = r”r[au]n”   匹配多种可能性<br>print(re.search(r”r[A-Z]n”, “dog runs to cat”))<br>print(re.search(r”r[a-z]n”, “dog runs to cat”))<br>print(re.search(r”r[0-9]n”, “dog r2ns to cat”))<br>print(re.search(r”r[0-9a-z]n”, “dog runs to cat”))<br>print(re.search(r”r\dn”, “run r4n”))                匹配数字<br>print(re.search(r”r\Dn”, “run r4n”))                匹配非数字<br>print(re.search(r”r\sn”, “r\nn r4n”))               匹配空白<br>print(re.search(r”r\Sn”, “r\nn r4n”))               匹配非空白符<br>print(re.search(r”r\wn”, “r\nn r4n”))               所有字母数字和”_”<br>print(re.search(r”r\Wn”, “r\nn r4n”))               跟上面相反<br>空白字符<br>In [10]:</p>
+<h1 id="b-empty-string-only-at-the-start-or-end-of-the-word"><a href="#b-empty-string-only-at-the-start-or-end-of-the-word" class="headerlink" title="\b : empty string (only at the start or end of the word)"></a>\b : empty string (only at the start or end of the word)</h1><p>print(re.search(r”\bruns\b”, “dog runs to cat”))    </p>
+<h1 id="B-empty-string-but-not-at-the-start-or-end-of-a-word"><a href="#B-empty-string-but-not-at-the-start-or-end-of-a-word" class="headerlink" title="\B : empty string (but not at the start or end of a word)"></a>\B : empty string (but not at the start or end of a word)</h1><p>print(re.search(r”\B runs \B”, “dog   runs  to cat”))<br>特殊字符 任意字符<br>In [11]:</p>
+<h1 id="match"><a href="#match" class="headerlink" title="\ : match \"></a>\ : match \</h1><p>print(re.search(r”runs\“, “runs\ to me”))          </p>
+<h1 id="match-anything-except-n"><a href="#match-anything-except-n" class="headerlink" title=". : match anything (except \n)"></a>. : match anything (except \n)</h1><p>print(re.search(r”r.n”, “r[ns to me”))</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 5), match=’runs\‘&gt;</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 3), match=’r[n’&gt;<br>句尾句首<br>In [12]:</p>
+<h1 id="match-line-beginning"><a href="#match-line-beginning" class="headerlink" title="^ : match line beginning"></a>^ : match line beginning</h1><p>print(re.search(r”^dog”, “dog runs to cat”))        </p>
+<h1 id="match-line-ending"><a href="#match-line-ending" class="headerlink" title="$ : match line ending"></a>$ : match line ending</h1><p>print(re.search(r”cat$”, “dog runs to cat”))</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 3), match=’dog’&gt;</p>
+<p>&lt;_sre.SRE_Match object; span=(12, 15), match=’cat’&gt;<br>是否<br>In [13]:</p>
+<h1 id="may-or-may-not-occur"><a href="#may-or-may-not-occur" class="headerlink" title="? : may or may not occur"></a>? : may or may not occur</h1><p>print(re.search(r”Mon(day)?”, “Monday”))<br>print(re.search(r”Mon(day)?”, “Mon”))</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 6), match=’Monday’&gt;</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 3), match=’Mon’&gt;<br>多行匹配<br>In [14]:</p>
+<h1 id="multi-line"><a href="#multi-line" class="headerlink" title="multi-line"></a>multi-line</h1><p>string = “””<br>dog runs to cat.<br>I run to dog.<br>“””<br>print(re.search(r”^I”, string))<br>print(re.search(r”^I”, string, flags=re.M))<br>None</p>
+<p>&lt;_sre.SRE_Match object; span=(18, 19), match=’I’&gt;<br>0或多次<br>In [15]:</p>
+<h1 id="occur-0-or-more-times"><a href="#occur-0-or-more-times" class="headerlink" title="* : occur 0 or more times"></a>* : occur 0 or more times</h1><p>print(re.search(r”ab<em>“, “a”))<br>print(re.search(r”ab</em>“, “abbbbb”))</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 1), match=’a’&gt;</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 6), match=’abbbbb’&gt;<br>1或多次<br>In [16]:</p>
+<h1 id="occur-1-or-more-times"><a href="#occur-1-or-more-times" class="headerlink" title="+ : occur 1 or more times"></a>+ : occur 1 or more times</h1><p>print(re.search(r”ab+”, “a”))<br>print(re.search(r”ab+”, “abbbbb”))<br>None</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 6), match=’abbbbb’&gt;<br>可选次数<br>In [17]:</p>
+<h1 id="n-m-occur-n-to-m-times"><a href="#n-m-occur-n-to-m-times" class="headerlink" title="{n, m} : occur n to m times"></a>{n, m} : occur n to m times</h1><p>print(re.search(r”ab{2,10}”, “a”))<br>print(re.search(r”ab{2,10}”, “abbbbb”))<br>None</p>
+<p>&lt;_sre.SRE_Match object; span=(0, 6), match=’abbbbb’&gt;<br>group 组<br>In [18]:</p>
+<h1 id="group"><a href="#group" class="headerlink" title="group"></a>group</h1><p>match = re.search(r”(\d+), Date: (.+)”, “ID: 021523, Date: Feb/12/2017”)<br>print(match.group())<br>print(match.group(1))<br>print(match.group(2))<br>021523, Date: Feb/12/2017<br>021523<br>Feb/12/2017<br>In [19]:<br>match = re.search(r”(?P<id>\d+), Date: (?P<date>.+)”, “ID: 021523, Date: Feb/12/2017”)<br>print(match.group(‘id’))<br>print(match.group(‘date’))<br>021523<br>Feb/12/2017<br>寻找所有匹配<br>In [20]:</date></id></p>
+<h1 id="findall"><a href="#findall" class="headerlink" title="findall"></a>findall</h1><p>print(re.findall(r”r[ua]n”, “run ran ren”))<br>[‘run’, ‘ran’]<br>In [21]:</p>
+<h1 id="or"><a href="#or" class="headerlink" title="| : or"></a>| : or</h1><p>print(re.findall(r”(run|ran)”, “run ran ren”))<br>[‘run’, ‘ran’]<br>替换<br>In [22]:</p>
+<h1 id="re-sub-replace"><a href="#re-sub-replace" class="headerlink" title="re.sub() replace"></a>re.sub() replace</h1><p>print(re.sub(r”r[au]ns”, “catches”, “dog runs to cat”))<br>dog catches to cat<br>分裂<br>In [23]:</p>
+<h1 id="re-split"><a href="#re-split" class="headerlink" title="re.split()"></a>re.split()</h1><p>print(re.split(r”[,;.]”, “a;b,c.d;e”))<br>[‘a’, ‘b’, ‘c’, ‘d’, ‘e’]<br>compile<br>In [24]:</p>
+<h1 id="compile"><a href="#compile" class="headerlink" title="compile"></a>compile</h1><p>compiled_re = re.compile(r”r[ua]n”)<br>print(compiled_re.search(“dog ran to cat”))</p>
+<p>&lt;_sre.SRE_Match object; span=(4, 7), match=’ran’&gt;</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/编程/">编程</a><a class="article-category-link" href="/categories/编程/学习笔记/">学习笔记</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/正则表达式/">正则表达式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自学内容/">自学内容</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-hexo的格式笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/03/09/hexo的格式笔记/" class="article-date">
+      <time datetime="2019-03-09T13:30:33.817Z" itemprop="datePublished">2019-03-09</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/09/hexo的格式笔记/">hexo博客的学习笔记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
         <p>这篇文章主要的作用是作为 .md文件打开，内部的格式为一个初学者对hexo以及markdown语法运用的笔记</p>
 <h2 id="1-Hexo的写文格式"><a href="#1-Hexo的写文格式" class="headerlink" title="1.Hexo的写文格式"></a>1.Hexo的写文格式</h2><p>最开始为文章的属性部分，以三横杠—开始，—结束。里面记录了文章的标题，日期，以及目录和标签。</p>
 <p>标签的作用明白了，目录的作用还不清楚，清楚之后<strong>记录在这里</strong></p>
 <h2 id="2-如何让代码在Hexo下更加美观"><a href="#2-如何让代码在Hexo下更加美观" class="headerlink" title="2.如何让代码在Hexo下更加美观"></a>2.如何让代码在Hexo下更加美观</h2><p>以一种更为美观的方式在Hexo中记录代码</p>
 <h3 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h3><a href="https://hexo.io/zh-cn/docs/tag-plugins#%E5%8F%8D%E5%BC%95%E5%8F%B7%E4%BB%A3%E7%A0%81%E5%9D%97" title="[external] [title]" target="_blank" rel="noopener">标签插件详细介绍页</a>
 <h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>代码块使用两个大括号作为上下的界限<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line">res = request.get(url)</span><br><span class="line">print(<span class="string">'Hello World!'</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-本地写作的图床解决方法"><a href="#3-本地写作的图床解决方法" class="headerlink" title="3.本地写作的图床解决方法"></a>3.本地写作的图床解决方法</h2><p>用<a href="https://www.qiniu.com/" title="[external] [title]" target="_blank" rel="noopener">七牛云</a>解决<br><a href="还没看完的教程https://www.youtube.com/watch?v=fQvodGl-WWA&list=PLXbU-2B80FvDjD_RiuNwsSQ4eF8pkwAIa&index=8" title="[external] [title]"></a></p>
 
       
     </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2019-03-09T10:15:35.133Z"><a href="/2019/03/09/hello-world/">2019-03-09</a></time>
+    
+    <div class="article-info article-info-index">
       
       
-  
-    <h1 class="title"><a href="/2019/03/09/hello-world/">Hello World</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a><a class="article-category-link" href="/categories/hexo/格式/">格式</a>
     </div>
-    <footer>
+
+
       
-        
-        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo1/">hexo1</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/格式/">格式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自学内容/">自学内容</a></li></ul>
+    </div>
+
       
       <div class="clearfix"></div>
-    </footer>
+    </div>
+    
   </div>
+  
 </article>
 
 
 
 
 
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:dageer7.github.io">
-  </form>
-</div>
 
-  
-<div class="widget tag">
-  <h3 class="title">分类</h3>
-  <ul class="entry">
-  
-    <li><a href="/categories/hexo/">hexo</a><small>1</small></li>
-  
-    <li><a href="/categories/hexo/格式/">格式</a><small>1</small></li>
-  
-  </ul>
-</div>
+
 
 
   
-<div class="widget tag">
-  <h3 class="title">标签</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/hexo1/">hexo1</a><small>1</small></li>
-  
-    <li><a href="/tags/格式/">格式</a><small>1</small></li>
-  
-    <li><a href="/tags/编程/">编程</a><small>1</small></li>
-  
-    <li><a href="/tags/自学内容/">自学内容</a><small>1</small></li>
-  
-  </ul>
-</div>
-
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2019 Dageer
   
 </div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2018-2019 Dageer
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
 </script>
 
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
 </body>
 </html>
